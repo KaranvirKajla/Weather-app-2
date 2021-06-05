@@ -1,0 +1,28 @@
+:root{
+  --main-bg-color: orange;
+  --primary-color:white
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#icon{
+    width: 18vw;
+}
+#temp{
+    font-size: 12vw;
+}
+.equalheight{
+    height: auto;
+    padding: 20px 0px;
+}
+.center{
+    margin: auto;
+}
