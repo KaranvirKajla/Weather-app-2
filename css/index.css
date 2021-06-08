@@ -17,7 +17,7 @@ body{
     width: 18vw;
 }
 #temp{
-    font-size: 12vw;
+    font-size: 9vw;
 }
 .equalheight{
     height: auto;
@@ -25,4 +25,8 @@ body{
 }
 .center{
     margin: auto;
+}
+form .inline{
+    padding: 6px;
+    border-radius: 12px;
 }

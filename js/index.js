@@ -7,6 +7,8 @@ const temp = document.getElementById('temp');
 const description = document.getElementById('description');
 const inputCity = document.getElementById('inputCity');
 const submitCityBtn = document.getElementById('submitCityBtn');
+const inputCity2 = document.getElementById('inputCity2');
+const submitCityBtn2 = document.getElementById('submitCityBtn2');
 const form = document.getElementById('form')
 
 const minmaxtemp = document.getElementById('minmaxtemp');
@@ -151,4 +153,13 @@ submitCityBtn.addEventListener('click',(e)=>{
     form.style.display='none';
     city.style.display='inline'
 
+})
+
+submitCityBtn2.addEventListener('click',(e)=>{
+    e.preventDefault();
+    let cityName = inputCity2.value;
+    getDataByCity(cityName).then((response)=>{
+        let requiredData = getRequiredData(response);
+        putData(requiredData);
+    })
 })

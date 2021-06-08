@@ -1,3 +1,7 @@
+:root{
+    --bg-color-nav:#585142;
+    --color-nav:white
+}
 .pv-4{
     padding: 0 15;
 }
@@ -8,4 +12,16 @@
 .bold{
     font-weight: 600;
     font-size: 40px;
+}
+.inline{
+    display: inline;
+}
+.bgnav{
+    background-color: var(--bg-color-nav);
+}
+nav{
+    color: white;
+}
+.white{
+    color:white;
 }
