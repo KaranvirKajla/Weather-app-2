@@ -24,7 +24,7 @@ const pressure = document.getElementById('pressure');
 
 async function getDataByLatLong(lat,long){
 
-    let url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}`
+    let url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${secrets.API_KEY}`
     console.log(url)
     let response = await fetch(url)
     let result = await response.json();
@@ -34,7 +34,7 @@ async function getDataByLatLong(lat,long){
 
 async function getDataByCity(city){
 
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
+    let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${secrets.API_KEY}`
     console.log(url)
     let response = await fetch(url)
     let result = await response.json();
